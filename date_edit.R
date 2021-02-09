@@ -24,14 +24,14 @@ a1 <-  bind_cols(a, yr_mo)
 head(a1)
 a1 <- rename(a1, date = ...9 )
 
-write.table(a1, file = "alaska_edit.txt", sep = "\t", row.names = TRUE, col.names = TRUE)
+write.table(a1, file = "alaska_edit.tab", sep = "\t", row.names = TRUE, col.names = TRUE)
 ###################################################################
 library(tibble)
 p <- readxl::read_excel(path = "Peru.xlsx", sheet = 1)
 head(p)
 
 str(p)
-write.table(a1, file = "Peru_edit.txt", sep = "\t", row.names = TRUE, col.names = TRUE)
+write.table(a1, file = "Peru_edit.tab", sep = "\t", row.names = TRUE, col.names = TRUE)
 
 ###################################################################
 library(tibble)
@@ -53,5 +53,5 @@ g1 <-  bind_cols(g, yr_mo_dag)
 head(a1)
 g1 <- rename(g1, date = ...30 )
 
-write.table(a1, file = "GOM_edit.txt", sep = "\t", row.names = TRUE, col.names = TRUE)
+write.table(a1, file = "GOM_edit.tab", sep = "\t", row.names = TRUE, col.names = TRUE)
 
